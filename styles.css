@@ -1,38 +1,55 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f9f9f9;
     color: #333;
     margin: 0;
     padding: 0;
 }
 
 .header {
-    background-color: #007bff;
+    background-color: #ff6f61;
     color: white;
     text-align: center;
     padding: 20px 0;
+    position: relative;
 }
 
 .title {
-    font-size: 2em;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5em;
+    margin-bottom: 5px;
 }
 
 .subtitle {
     font-size: 1.2em;
-    margin-bottom: 0;
+    margin: 0;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 5px solid white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .section {
-    background-color: white;
+    background-color: #fff;
     padding: 20px;
     margin: 20px;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .section-title {
-    font-size: 1.5em;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.8em;
     margin-top: 0;
+    color: #ff6f61;
 }
 
 .info-item {
@@ -49,37 +66,13 @@ body {
     font-size: 1.2em;
 }
 
-.experience-item {
-    margin-bottom: 10px;
+.quote {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 20px;
+    color: #ff6f61;
 }
-
-.experience-title {
-    font-size: 1.2em;
-    margin-top: 0;
-}
-
-.education-item {
-    margin-bottom: 10px;
-}
-
-.education-title {
-    font-size: 1.2em;
-    margin-top: 0;
-}
-
-.proyect-text {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-}
-
-.reference-item {
-    margin-bottom: 10px;
-}
-
-.reference-text {
-    font-size: 1.2em;
-}
-
 .carousel {
     display: flex;
     overflow-x: auto;
