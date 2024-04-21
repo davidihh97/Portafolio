@@ -1,53 +1,105 @@
 /* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f1f1f1;
 }
 
-header, footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-}
-
-main {
+.container {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
 }
 
-/* Estilos específicos para secciones */
-section {
+h1, h2, h3 {
+    color: #333;
+    font-weight: bold;
+}
+
+p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Carrusel de imágenes */
+.slick-slider {
+    margin-top: 70px;
     margin-bottom: 20px;
 }
 
-h1 {
-    font-size: 2em;
-    margin-bottom: 10px;
+.slick-slider img {
+    width: 100%;
+    height: auto;
 }
 
-h2 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
+/* Secciones */
+section {
+    background-color: white;
+    padding: 40px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: relative;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
+/* Efectos de desplazamiento */
+.animate__animated {
+    opacity: 0;
 }
 
-li {
-    margin-bottom: 10px;
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
 
-/* Estilos para enlaces */
+/* Enlaces */
 a {
-    color: #007bff;
+    color: #4CAF50;
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline;
+}
+
+/* Animaciones */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Utilizar animaciones de Animate.css */
+.animate__animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.animate__fadeInUp {
+    animation-name: fadeInUp;
 }
