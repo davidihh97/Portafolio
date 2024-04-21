@@ -1,166 +1,103 @@
-/* Estilos generales */
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8;
-    color: #333;
 }
 
-.container {
-    max-width: 800px;
-    margin: 0 auto;
+.header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.title {
+    font-size: 2em;
+}
+
+.subtitle {
+    font-size: 1.2em;
+    margin-bottom: 0;
+}
+
+.section {
+    background-color: white;
     padding: 20px;
-}
-
-h1, h2, h3 {
-    color: #333;
-    font-weight: bold;
-}
-
-p {
-    color: #666;
-    line-height: 1.6;
-}
-
-/* Encabezado */
-header {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-/* Carrusel de imágenes */
-.slick-slider {
-    margin-top: 70px;
-    margin-bottom: 20px;
-}
-
-.slick-slider img {
-    width: 100%;
-    height: auto;
-}
-
-/* Secciones */
-section {
-    background-color: #fff;
-    padding: 40px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    position: relative;
-}
-
-/* Efectos de desplazamiento */
-.animate__animated {
-    opacity: 0;
-}
-
-/* Pie de página */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-/* Enlaces */
-a {
-    color: #3498db;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-a:hover {
-    color: #2980b9;
-}
-
-/* Animaciones */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Utilizar animaciones de Animate.css */
-.animate__animated {
-    animation-duration: 1s;
-    animation-fill-mode: both;
-}
-
-.animate__fadeInUp {
-    animation-name: fadeInUp;
-}
-
-/* Títulos y subtítulos */
-h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-h2 {
-    font-size: 2rem;
-    margin-bottom: 15px;
-    color: #333;
-}
-
-h3 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-    color: #333;
-}
-
-/* Botones */
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 20px;
-    background-color: #3498db;
-    color: white;
+    margin: 20px;
     border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.btn:hover {
-    background-color: #2980b9;
+.section-title {
+    font-size: 1.5em;
+    margin-top: 0;
 }
 
-/* Imágenes redondas */
-.rounded-img {
-    border-radius: 50%;
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.info-text {
+    margin-left: 10px;
+}
+
+.presentation-text {
+    font-size: 1.2em;
+}
+
+.experience-item {
+    margin-bottom: 10px;
+}
+
+.experience-title {
+    font-size: 1.2em;
+    margin-top: 0;
+}
+
+.education-item {
+    margin-bottom: 10px;
+}
+
+.education-title {
+    font-size: 1.2em;
+    margin-top: 0;
+}
+
+.proyect-text {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.reference-item {
+    margin-bottom: 10px;
+}
+
+.reference-text {
+    font-size: 1.2em;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.carousel-item {
+    flex-shrink: 0;
+    width: 300px;
+    height: 200px;
+    margin-right: 10px;
+    scroll-snap-align: start;
+    border-radius: 5px;
     overflow: hidden;
-    width: 150px;
-    height: 150px;
 }
 
-/* Columnas */
-.column {
-    float: left;
-    width: 50%;
-    padding: 0 10px;
-    box-sizing: border-box;
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-
-/* Limpiar float */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
