@@ -1,9 +1,10 @@
 /* Estilos generales */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f1f1f1;
+    background-color: #f8f8f8;
+    color: #333;
 }
 
 .container {
@@ -27,11 +28,11 @@ header {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 500;
+    z-index: 1000;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
@@ -48,11 +49,11 @@ header {
 
 /* Secciones */
 section {
-    background-color: white;
+    background-color: #fff;
     padding: 40px;
     margin-bottom: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     position: relative;
 }
 
@@ -74,13 +75,13 @@ footer {
 
 /* Enlaces */
 a {
-    color: #4CAF50;
+    color: #3498db;
     text-decoration: none;
     transition: color 0.3s;
 }
 
 a:hover {
-    color: #00bcd4;
+    color: #2980b9;
 }
 
 /* Animaciones */
@@ -104,3 +105,62 @@ a:hover {
 .animate__fadeInUp {
     animation-name: fadeInUp;
 }
+
+/* Títulos y subtítulos */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Botones */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+/* Imágenes redondas */
+.rounded-img {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+}
+
+/* Columnas */
+.column {
+    float: left;
+    width: 50%;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+/* Limpiar float */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
