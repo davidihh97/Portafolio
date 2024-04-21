@@ -1,7 +1,16 @@
-$(document).ready(function(){
-    // Inicializar el carrusel de imágenes
-    $('.slick-slider').slick();
+document.addEventListener("DOMContentLoaded", function () {
+    const sectionTitles = document.querySelectorAll(".section-title");
 
-    // Inicializar efectos de desplazamiento
-    ScrollReveal().reveal('.animate__animated', { delay: 500, duration: 1000 });
+    // Función para animar los títulos de sección
+    function animateSectionTitles() {
+        sectionTitles.forEach((title, index) => {
+            const delay = (index + 1) * 200; // Ajusta el retraso entre las animaciones
+            setTimeout(() => {
+                title.classList.add("animate");
+            }, delay);
+        });
+    }
+
+    // Llamar a la función cuando se cargue la página
+    window.addEventListener("load", animateSectionTitles);
 });
