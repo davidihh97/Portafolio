@@ -25,7 +25,39 @@ body {
 .title-info {
     text-align: center;
 }
+.nav {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    padding: 20px;
+}
 
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-item {
+    flex: 1;
+}
+
+.nav-link {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #1e1e1e;
+}
 .section {
     padding: 40px;
     position: relative;
@@ -107,21 +139,21 @@ body {
 
 /* Agregar fondos con opacidad baja a las secciones */
 #informacion-personal {
-    background-image: url('https://via.placeholder.com/1500x1000?text=Imagen+de+Educación');
+    background-image: url('raw.githubusercontent.com/davidihh97/Portafolio/main/fondo.jpg');
     background-size: cover;
     background-position: center;
     opacity: 0.8;
 }
 
 #presentacion {
-    background-image: url('https://via.placeholder.com/1500x1000?text=Imagen+de+Educación');
+    background-image: url('raw.githubusercontent.com/davidihh97/Portafolio/main/fondo.jpg');
     background-size: cover;
     background-position: center;
     opacity: 0.8;
 }
 
 #experiencia-laboral {
-    background-image: url('https://via.placeholder.com/1500x1000?text=Imagen+de+Educación');
+    background-image: url('raw.githubusercontent.com/davidihh97/Portafolio/main/fondo.jpg');
     background-size: cover;
     background-position: center;
     opacity: 0.8;
